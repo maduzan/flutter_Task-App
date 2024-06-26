@@ -32,6 +32,7 @@ class _WelcomeState extends State<Welcome> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
+        leading: IconButton(onPressed: () {}, icon: Icon(Icons.home)),
         title: Center(
             child: Text(
           'Welcome to our Shop',
