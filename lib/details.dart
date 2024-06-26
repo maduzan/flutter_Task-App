@@ -25,7 +25,15 @@ class _DetailsState extends State<Details> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Center(
+          child: Text(
+            "Welcome to Product Details Page",
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+      ),
       body: FutureBuilder<Product>(
         future: futureProduct,
         builder: (context, snapshot) {
